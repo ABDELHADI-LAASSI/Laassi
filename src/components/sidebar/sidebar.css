@@ -1,0 +1,139 @@
+.sidebar {
+    height:95% ;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    left: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    overflow-x: hidden;
+    border:var(--border);
+    border-radius: 10px;
+    display: block !important;
+    background-color: white;
+}
+
+.hide_sidebar {
+    display: none !important;
+}
+
+.sidebar_top {
+    border-bottom:var(--border); 
+    padding: 10px 0;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.sidebar_center ul {
+    margin-top: 20px;
+}
+
+.sidebar_center ul li{
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: start;
+    column-gap: 30px;
+    padding-left: 30px;
+
+}
+
+.sidebar_center ul li a {
+    text-decoration: none;
+    color: black;
+    transition: .2s;
+}
+
+.sidebar_center ul li a:hover {
+    color: var(--theme-color);
+}
+
+.active_link a {
+    color: var(--theme-color) !important;
+}
+
+.sidebar_center ul li .circle {
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: var(--border);
+    position: relative;
+    transition: .4s;
+}
+
+.sidebar_center ul li .dot {
+    width: 8px; /* Diameter of the small circle */
+    height: 8px;
+    background-color: var(--theme-color); /* Color of the small circle */
+    border-radius: 50%;
+    position: absolute;
+    top: 0; /* Place the small circle at the top edge of the big circle */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.active_circle{
+    animation: rotate 2s linear infinite; /* Rotation animation */
+    width: 30px !important;
+    height: 30px !important;;
+}
+
+.active_circle .dot {
+    display: block !important;
+}
+
+
+
+
+@keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+.sidebar_center ul li span::after {
+    content: "";
+    position: absolute;
+}
+
+.sidebar_center ul li span::before {
+    content: "";
+    position: absolute;
+}
+
+
+
+.active {
+    position: relative;
+}
+
+.active::after {
+    content: "";
+    
+}
+
+
+@media screen and (max-width: 1300px) {
+    .sidebar {
+        top: 0;
+        left: 0;
+        width: 250px;
+        height: 100%;
+        transform: none;
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1301px) {
+    .sidebar {
+        display: block;
+    }
+}

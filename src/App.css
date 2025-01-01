@@ -1,0 +1,76 @@
+:root {
+    --border :1px solid rgba(0,0,0, 0.1);
+    --theme-color: #ffc107;
+    --theme-color-2: #80caff;
+    --theme-color-3: #c5e4f3;
+}
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+}
+.logo span {
+    color: var(--theme-color);
+}
+
+* {
+    font-family: "Cairo", serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    width: 100%;
+    padding-right: calc(var(--bs-gutter-x) * 0.5);
+    padding-left: calc(var(--bs-gutter-x) * 0.5);
+    margin-right: auto;
+    margin-left: auto;
+}
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1320px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+.main_layout {
+    padding-left: 300px;
+    background-color: #ffffff;
+}
+
+
+@media screen and (max-width: 1300px) {
+    .main_layout {
+        padding-left: 0px;
+    }
+}
