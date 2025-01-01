@@ -136,4 +136,8 @@
     .sidebar {
         display: block;
     }
+
+    .hide_sidebar {
+        display: block !important;
+    }
 }
