@@ -81,7 +81,7 @@
 .active_circle{
     animation: rotate 2s linear infinite; /* Rotation animation */
     width: 30px !important;
-    height: 30px !important;;
+    height: 30px !important;
 }
 
 .active_circle .dot {
@@ -98,7 +98,7 @@
     100% {
       transform: rotate(360deg);
     }
-  }
+}
 .sidebar_center ul li span::after {
     content: "";
     position: absolute;
@@ -129,6 +129,10 @@
         height: 100%;
         transform: none;
         display: none;
+    }
+
+    .hide_sidebar {
+        display: none !important;
     }
 }
 
