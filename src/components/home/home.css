@@ -115,6 +115,11 @@
     color: #fff;
 }
 
+.hire_me_button span  {
+    color: var(--theme-color);
+    font-weight: 500;
+}
+
 .hire_me_button:hover a {
     background-color: #fff;
     color: var(--theme-color);
