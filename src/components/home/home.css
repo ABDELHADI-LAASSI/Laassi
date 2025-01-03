@@ -118,6 +118,11 @@
 .hire_me_button span  {
     color: var(--theme-color);
     font-weight: 500;
+    transition: .3s ease-in-out;
+}
+
+.hire_me_button:hover span {
+    color: #fff;
 }
 
 .hire_me_button:hover a {
